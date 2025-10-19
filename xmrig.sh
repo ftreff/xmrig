@@ -16,13 +16,15 @@ esac
 cd
 echo "Downloading xmrig to the home directory"
 sleep .2
+sudo apt install git -y
+sleep .2
 git clone https://github.com/xmrig/xmrig.git
 sleep .2
 echo "Downloading/upgrading packages required to proceed"
 sleep .2
 sudo apt update
 sudo apt full-upgrade -y
-sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
+sudo apt install build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
 sudo apt autoremove -y
 sleep .2
 echo "Building xmrig"
