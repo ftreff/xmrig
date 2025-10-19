@@ -29,8 +29,6 @@ echo "Building xmrig"
 sleep .2
 cd && cd xmrig && mkdir build && cd build && cmake .. && sudo make
 sleep .2
-echo "Building xmrig-mo"
-sleep .2
 echo "xmrig is now ready for use"
 sleep 1
 exit 0
