@@ -1,7 +1,29 @@
 #!/bin/bash
-echo "This scrip will download and build xmrig."
-
-read -p "Do you want to proceed with downloading and building the latest version xmrig and xmrig-mo from GitHub? (y/n) " yn
+echo "     "
+echo "     "
+echo "               ▒▒▒▒▒▒▒▒▒▒▒▒▒"
+echo "            ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒"
+echo "         ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒"
+echo "        ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ "
+echo "       ▒▒▒    ░▒▒▒▒▒▒    ▒▒▒▒▒▒▒▒▒▒▒ "
+echo "      ▒▒▒▒▒░   ░▒▒▒░    ▒▒▒▒▒▒▒▒▒▒▒▒▒ "
+echo "     ▒▒▒▒▒▒▒░    ▒░   ░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒"
+echo "     ▒▒▒▒▒▒▒▒▒       ░▒▒▒▒░  ░░    ▒▒▒"
+echo "     ▒▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒▒░    ░░░▒▒▒▒"
+echo "     ▒▒▒▒▒▒▒▒▒░     ░▒▒▒▒▒░   ▒▒▒▒▒▒▒▒"
+echo "     ▒▒▒▒▒▒▒▒░       ░▒▒▒▒░   ▒▒▒▒▒▒▒▒"
+echo "     ▒▒▒▒▒▒▒░   ░▓▒    ▒▒▒░   ▒▒▒▒▒▒▒▒"
+echo "      ░░░░░    ▒▓▓▓▒    ░░    ░░░░░░░"
+echo "      ░░      ▒▓▓▓▓▓▓░             ░░"
+echo "        ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
+echo "         ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
+echo "            ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
+echo "              ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
+echo ""
+echo ""
+echo "This scrip will download and build the latest version xmrig in your home directory?"
+echo ""
+read -p "Do You want to proceed with installing XMRig (y/n) " yn
 
 case $yn in 
 	y ) echo ok, we will proceed;;
