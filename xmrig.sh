@@ -21,13 +21,15 @@ echo "            ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
 echo "              ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
 echo ""
 echo ""
-echo "This scrip will download and build the latest version xmrig in your home directory?"
+echo "This script will download and build the latest version of XMRig."
+echo "XMRig will be downloaded to your home directory and built there."
+echo "Your system will be updated and any required packages will be installed." 
 echo ""
-read -p "Do You want to proceed with installing XMRig (y/n) " yn
+read -p "Do You want to proceed (y/n) " yn
 
 case $yn in 
-	y ) echo ok, we will proceed;;
-	n ) echo exiting...;
+	y ) echo Installing XMRig...;;
+	n ) echo Exiting...;
 		sleep 1
 		exit;;
 	* ) echo invalid response;
@@ -36,7 +38,7 @@ case $yn in
 esac
 
 cd
-echo "Downloading xmrig to the home directory"
+echo "Downloading XMRig to your home directory"
 sleep .2
 sudo apt install git -y
 sleep .2
