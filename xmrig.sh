@@ -19,7 +19,9 @@ echo "        ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 echo "         ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
 echo "            ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
 echo "              ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
+echo "              XMRig Installer"
 echo ""
+echo"                                  [FAT Warez 2025]"
 echo ""
 echo "This script will download and build the latest version of XMRig."
 echo "XMRig will be downloaded to your home directory and built there."
@@ -28,11 +30,23 @@ echo ""
 read -p "Do You want to proceed (y/n) " yn
 
 case $yn in 
-	y ) echo Installing XMRig...;;
-	n ) echo Exiting...;
+	y ) echo "";
+		echo "░░▀█▀░█▀█░█▀▀░▀█▀░█▀█░█░░░█░░░▀█▀░█▀█░█▀▀░░"
+		echo "░░░█░░█░█░▀▀█░░█░░█▀█░█░░░█░░░░█░░█░█░█░█░░"
+		echo "░░▀▀▀░▀░▀░▀▀▀░░▀░░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░░"
+		echo "░ ██╗  ██╗███╗   ███╗██████╗ ██╗ ██████╗  ░"
+		echo "░ ╚██╗██╔╝████╗ ████║██╔══██╗██║██╔════╝  ░"
+		echo "░  ╚███╔╝ ██╔████╔██║██████╔╝██║██║  ███╗ ░"
+		echo "░  ██╔██╗ ██║╚██╔╝██║██╔══██╗██║██║   ██║ ░"
+		echo "░ ██╔╝ ██╗██║ ╚═╝ ██║██║  ██║██║╚██████╔╝ ░"
+		echo "░ ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝ ╚═════╝  ░"
+		echo "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
+		echo ""
+		sleep .5;;
+	n ) echo "Exiting...";
 		sleep 1
 		exit;;
-	* ) echo invalid response;
+	* ) echo "invalid response";
 		sleep 1
 		exit 1;;
 esac
@@ -53,7 +67,12 @@ sudo apt autoremove -y
 sleep .2
 echo "Building xmrig"
 sleep .2
-cd && cd xmrig && mkdir build && cd build && cmake .. && sudo make
+cd
+cd xmrig
+mkdir build
+cd build
+cmake ..
+sudo make
 sleep .2
 echo "xmrig is now ready for use"
 sleep 1
